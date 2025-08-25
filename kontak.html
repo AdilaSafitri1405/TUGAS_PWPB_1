@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AERISHA'S DAYCARE - Kontak</title>
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         * {
             box-sizing: border-box;
@@ -34,6 +34,45 @@
             z-index: -1;
         }
 
+        nav {
+    background-color: #fff0f6;
+    padding: 12px 24px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px dashed #fca3d2;
+    font-family: 'Baloo 2', cursive;
+}
+
+.nav-title {
+    font-weight: 700;
+    font-size: 20px;
+    color: #f58fc7;
+}
+
+.nav-links {
+    display: flex;
+    gap: 16px;
+    font-size: 14px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ec6bb5;
+    font-weight: 600;
+    transition: color 0.2s;
+}
+
+.nav-links a:hover {
+    color: #f58fc7;
+}
+        
+
+        
         .container {
             max-width: 850px;
             background-color: #ffffffee;
@@ -60,6 +99,7 @@
             margin-top: 4px;
         }
 
+      
         form {
             margin-top: 30px;
         }
@@ -67,16 +107,18 @@
         label {
             font-weight: bold;
             color: #ec6bb5;
+            display: block;
+            margin-bottom: 6px;
         }
 
         input, textarea {
             width: 100%;
             padding: 12px;
-            margin-top: 8px;
             margin-bottom: 20px;
             border: 2px dashed #fca3d2;
             border-radius: 12px;
             font-size: 14px;
+            resize: none;
         }
 
         button {
@@ -94,6 +136,7 @@
             background-color: #ec6bb5;
         }
 
+      
         .footer {
             background-color: #ffeaf5;
             color: #9b4c78;
@@ -110,28 +153,31 @@
 <body>
 
 <div class="background-decor"></div>
-<nav style="background-color:#fff0f6; padding: 12px 24px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 10; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px dashed #fca3d2;">
-    <div style="font-weight:700; font-size: 20px; color:#f58fc7;">
+
+<nav>
+     <div style="font-family:'Baloo 2', cursive; font-weight:700; font-size: 20px; color:#f58fc7;">
         🌸 Aerisha's Daycare
     </div>
-    <div style="display:flex; gap:16px; font-size: 14px;">
-        <a href="home.html" style="text-decoration: none; color:#ec6bb5; font-weight:600;">Home</a>
-        <a href="index.html" style="text-decoration: none; color:#ec6bb5; font-weight:600;">Formulir</a>
-        <a href="kontak.html" style="text-decoration: none; color:#ec6bb5; font-weight:600;">Kontak</a>
+    <div style="display:flex; gap:16px; font-size: 14px;">             
+    <a href="home.html" style="text-decoration: none; color:#ec6bb5; font-weight:600;">Home</a>
+    <a href="dokumentasi.html" style="text-decoration: none; color:#ec6bb5; font-weight:600;">Dokumentasi</a>
+    <a href="formulir.html" style="text-decoration: none; color:#ec6bb5; font-weight:600;">Formulir</a>
+    <a href="kontak.html" style="text-decoration: none; color:#ec6bb5; font-weight:600;">Kontak</a>
+
     </div>
 </nav>
 
+
 <div class="container">
     <h1>📩 Hubungi Kami</h1>
-    <p class="subtitle">Kami siap menjawab pertanyaan Anda 💕</p>
+    <p class="subtitle">Kami bersedia menerima pertanyaan, kritik, maupun catatan dari Anda 💕</p>
 
     <form action="#" method="post">
         <label for="nama">Nama Lengkap</label>
         <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda" required>
 
-        
-        <label for="nama">Nama putra/putri</label>
-        <input type="text" id="mama" name="nama" placeholder="Contoh : ibu dari ananda Miskasyila" required>
+        <label for="anak">Nama Putra/Putri</label>
+        <input type="text" id="anak" name="anak" placeholder="Contoh: Ibu dari ananda Miskasyila" required>
 
         <label for="pesan">Pesan</label>
         <textarea id="pesan" name="pesan" rows="5" placeholder="Ketik pesan di sini yaa moms..." required></textarea>
@@ -139,14 +185,14 @@
         <button type="submit">Kirim Pesan</button>
     </form>
 </div>
+<footer class="footer">    
+🌸 Terima kasih telah mempercayakan buah hati tercinta di <strong>Aerisha's Daycare</strong>! 💕<br>
+        📍 Lokasi: Jl. Rainbownies Baby No.65, BabyTown <br>
+        ☎️ 0812-3456-7890 <br><br>
+               © AERISHA'S DAYCARE Since 2022
+        
+</footer>    
 
-<footer class="footer">
-    <p>📍 Jl. Rainbownies baby No.65, BabyTown<br>
-       ☎️ 0812-3456-7890<br>
-       📧 aerisha.daycare@email.com <br><br>
-       © AERISHA'S DAYCARE Since 2022
-       </p>
-</footer>
 
 </body>
 </html>
